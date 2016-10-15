@@ -27,10 +27,10 @@ class ViewController: UIViewController {
     @IBAction func deal(sender: UIButton){
         let cards: [UIImage] = [#imageLiteral(resourceName: "card2"), #imageLiteral(resourceName: "card3"), #imageLiteral(resourceName: "card4"), #imageLiteral(resourceName: "card5"), #imageLiteral(resourceName: "card6"), #imageLiteral(resourceName: "card7"), #imageLiteral(resourceName: "card8"), #imageLiteral(resourceName: "card9"), #imageLiteral(resourceName: "card10"), #imageLiteral(resourceName: "jack"), #imageLiteral(resourceName: "queen"), #imageLiteral(resourceName: "king"), #imageLiteral(resourceName: "ace")]
         
-        var leftRandom = Int(arc4random_uniform(13))
+        let leftRandom = Int(arc4random_uniform(13))
         LeftCardView.image = cards[leftRandom]
         
-        var rightRandom = Int(arc4random_uniform(13))
+        let rightRandom = Int(arc4random_uniform(13))
         RightCardView.image = cards[rightRandom]
     }
     
